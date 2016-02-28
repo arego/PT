@@ -1,0 +1,843 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="script/jquery.js"></script>
+    <script src="script/functions.js"></script>
+    <style>
+        @import url(content/style/cube.css);
+    </style>
+    <title></title>
+</head>
+<body>
+    <main title="Cube">
+        <div class="stage">
+            <div id="container" class="cubespinner">
+                <table class="face1">
+                    <tbody>
+                        <tr>
+                            <td class="nonmetal">
+                                <small>1</small>
+                                <big>H</big>
+                                <bdo>Hydrogen</bdo>
+                                <bdi>1.0079</bdi>
+                            </td>
+                            <td class="noble_gas">
+                                <small>2</small>
+                                <big>He</big>
+                                <bdo>Helium</bdo>
+                                <bdi>4.00260</bdi>
+                            </td>
+                            <td class="alkali_metal">
+                                <small>3</small>
+                                <big>Li</big>
+                                <bdo>Lithium</bdo>
+                                <bdi>6.941</bdi>
+                            </td>
+                            <td class="alkaline_metal">
+                                <small>4</small>
+                                <big>Be</big>
+                                <bdo>Beryllium</bdo>
+                                <bdi>9.01218</bdi>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="semi_metal">
+                                <small>5</small>
+                                <big>B</big>
+                                <bdo>Boron</bdo>
+                                <bdi>10.811</bdi>
+                            </td>
+                            <td class="nonmetal">
+                                <small>6</small>
+                                <big>C</big>
+                                <bdo>Carbon</bdo>
+                                <bdi>12.011</bdi>
+                            </td>
+                            <td class="nonmetal">
+                                <small>7</small>
+                                <big>N</big>
+                                <bdo>Nitrogen</bdo>
+                                <bdi>14.00674</bdi>
+                            </td>
+                            <td></td>
+                            <td class="nonmetal">
+                                <small>8</small>
+                                <big>O</big>
+                                <bdo>Oxygen</bdo>
+                                <bdi>15.9994</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="halogen">
+                                <small>9</small>
+                                <big>F</big>
+                                <bdo>Fluorine</bdo>
+                                <bdi>18.998403</bdi>
+                            </td>
+                            <td class="noble_gas">
+                                <small>10</small>
+                                <big>Ne</big>
+                                <bdo>Neon</bdo>
+                                <bdi>20.1797</bdi>
+                            </td>
+                            <td></td>
+                            <td class="alkali_metal">
+                                <small>11</small>
+                                <big>Na</big>
+                                <bdo>Sodium</bdo>
+                                <bdi>22.989768</bdi>
+                            </td>
+                            <td class="alkaline_metal">
+                                <small>12</small>
+                                <big>Mg</big>
+                                <bdo>Magnesium</bdo>
+                                <bdi>24.305</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basic_metal">
+                                <small>13</small>
+                                <big>Al</big>
+                                <bdo>Aluminum</bdo>
+                                <bdi>26.981539</bdi>
+                            </td>
+                            <td></td>
+                            <td class="semi_metal">
+                                <small>14</small>
+                                <big>Si</big>
+                                <bdo>Silicon</bdo>
+                                <bdi>28.0855</bdi>
+                            </td>
+                            <td class="nonmetal">
+                                <small>15</small>
+                                <big>P</big>
+                                <bdo>Phosphorus</bdo>
+                                <bdi>30.973762</bdi>
+                            </td>
+                            <td class="nonmetal">
+                                <small>16</small>
+                                <big>S</big>
+                                <bdo>Sulfur</bdo>
+                                <bdi>32.066</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="halogen">
+                                <small>17</small>
+                                <big>Cl</big>
+                                <bdo>Chlorine</bdo>
+                                <bdi>35.4527</bdi>
+                            </td>
+                            <td class="noble_gas">
+                                <small>18</small>
+                                <big>Ar</big>
+                                <bdo>Argon</bdo>
+                                <bdi>39.948</bdi>
+                            </td>
+                            <td class="alkali_metal">
+                                <small>19</small>
+                                <big>K</big>
+                                <bdo>Potassium</bdo>
+                                <bdi>39.0983</bdi>
+                            </td>
+                            <td class="alkaline_metal">
+                                <small>20</small>
+                                <big>Ca</big>
+                                <bdo>Calcium</bdo>
+                                <bdi>40.078</bdi>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="face2">
+                    <tbody>
+                        <tr>
+                            <td class="transition_metal">
+                                <small>21</small>
+                                <big>Sc</big>
+                                <bdo>Scandium</bdo>
+                                <bdi>44.95591</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>22</small>
+                                <big>Ti</big>
+                                <bdo>Titanium</bdo>
+                                <bdi>47.88</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>23</small>
+                                <big>V</big>
+                                <bdo>Vanadium</bdo>
+                                <bdi>50.9415</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>24</small>
+                                <big>Cr</big>
+                                <bdo>Chromium</bdo>
+                                <bdi>51.9961</bdi>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="transition_metal">
+                                <small>25</small>
+                                <big>Mn</big>
+                                <bdo>Manganese</bdo>
+                                <bdi>54.938</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>26</small>
+                                <big>Fe</big>
+                                <bdo>Iron</bdo>
+                                <bdi>55.847</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>27</small>
+                                <big>Co</big>
+                                <bdo>Cobalt</bdo>
+                                <bdi>58.9332</bdi>
+                            </td>
+                            <td></td>
+                            <td class="transition_metal">
+                                <small>28</small>
+                                <big>Ni</big>
+                                <bdo>Nickel</bdo>
+                                <bdi>58.6934</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="transition_metal">
+                                <small>29</small>
+                                <big>Cu</big>
+                                <bdo>Copper</bdo>
+                                <bdi>63.546</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>30</small>
+                                <big>Zn</big>
+                                <bdo>Zinc</bdo>
+                                <bdi>65.39</bdi>
+                            </td>
+                            <td></td>
+                            <td class="basic_metal">
+                                <small>31</small>
+                                <big>Ga</big>
+                                <bdo>Gallium</bdo>
+                                <bdi>69.732</bdi>
+                            </td>
+                            <td class="semi_metal">
+                                <small>32</small>
+                                <big>Ge</big>
+                                <bdo>Germanium</bdo>
+                                <bdi>72.64</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="semi_metal">
+                                <small>33</small>
+                                <big>As</big>
+                                <bdo>Arsenic</bdo>
+                                <bdi>74.92159</bdi>
+                            </td>
+                            <td></td>
+                            <td class="nonmetal">
+                                <small>34</small>
+                                <big>Se</big>
+                                <bdo>Selenium</bdo>
+                                <bdi>78.96</bdi>
+                            </td>
+                            <td class="halogen">
+                                <small>35</small>
+                                <big>Br</big>
+                                <bdo>Bromine</bdo>
+                                <bdi>79.904</bdi>
+                            </td>
+                            <td class="noble_gas">
+                                <small>36</small>
+                                <big>Kr</big>
+                                <bdo>Krypton</bdo>
+                                <bdi>83.80</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="alkali_metal">
+                                <small>37</small>
+                                <big>Rb</big>
+                                <bdo>Rabidium</bdo>
+                                <bdi>85.4678</bdi>
+                            </td>
+                            <td class="alkaline_metal">
+                                <small>38</small>
+                                <big>Sr</big>
+                                <bdo>Strontium</bdo>
+                                <bdi>87.62</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>39</small>
+                                <big>Y</big>
+                                <bdo>Yttrium</bdo>
+                                <bdi>88.90585</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>40</small>
+                                <big>Zr</big>
+                                <bdo>Zirconium</bdo>
+                                <bdi>91.224</bdi>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="face3">
+                    <tbody>
+                        <tr>
+                            <td class="transition_metal">
+                                <small>41</small>
+                                <big>Nb</big>
+                                <bdo>Niobium</bdo>
+                                <bdi>92.90638</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>42</small>
+                                <big>Mo</big>
+                                <bdo>Molybdenum</bdo>
+                                <bdi>95.94</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>43</small>
+                                <big>Tc</big>
+                                <bdo>Technetium</bdo>
+                                <bdi>98.9072</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>44</small>
+                                <big>Ru</big>
+                                <bdo>Ruthenium</bdo>
+                                <bdi>101.07</bdi>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="transition_metal">
+                                <small>45</small>
+                                <big>Rh</big>
+                                <bdo>Rhodium</bdo>
+                                <bdi>102.9055</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>46</small>
+                                <big>Pd</big>
+                                <bdo>Palladium</bdo>
+                                <bdi>106.42</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>47</small>
+                                <big>Ag</big>
+                                <bdo>Silver</bdo>
+                                <bdi>107.8682</bdi>
+                            </td>
+                            <td></td>
+                            <td class="transition_metal">
+                                <small>48</small>
+                                <big>Cd</big>
+                                <bdo>Cadmium</bdo>
+                                <bdi>112.411</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="basic_metal">
+                                <small>49</small>
+                                <big>In</big>
+                                <bdo>Indium</bdo>
+                                <bdi>114.818</bdi>
+                            </td>
+                            <td class="basic_metal">
+                                <small>50</small>
+                                <big>Sn</big>
+                                <bdo>Tin</bdo>
+                                <bdi>118.71</bdi>
+                            </td>
+                            <td></td>
+                            <td class="semi_metal">
+                                <small>51</small>
+                                <big>Sb</big>
+                                <bdo>Antimony</bdo>
+                                <bdi>121.760</bdi>
+                            </td>
+                            <td class="semi_metal">
+                                <small>52</small>
+                                <big>Te</big>
+                                <bdo>Tellurium</bdo>
+                                <bdi>127.6</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="halogen">
+                                <small>53</small>
+                                <big>I</big>
+                                <bdo>Iodine</bdo>
+                                <bdi>126.90447</bdi>
+                            </td>
+                            <td></td>
+                            <td class="noble_gas">
+                                <small>54</small>
+                                <big>Xe</big>
+                                <bdo>Xenon</bdo>
+                                <bdi>131.29</bdi>
+                            </td>
+                            <td class="alkali_metal">
+                                <small>55</small>
+                                <big>Cs</big>
+                                <bdo>Cesium</bdo>
+                                <bdi>132.90543</bdi>
+                            </td>
+                            <td class="alkaline_metal">
+                                <small>56</small>
+                                <big>Ba</big>
+                                <bdo>Barium</bdo>
+                                <bdi>137.327</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="lanthanide">
+                                <small>57</small>
+                                <big>La</big>
+                                <bdo>Lanthanum</bdo>
+                                <bdi>138.9055</bdi>
+                            </td>
+                            <td class="lanthanide">
+                                <small>58</small>
+                                <big>Ce</big>
+                                <bdo>Cerium</bdo>
+                                <bdi>140.115</bdi>
+                            </td>
+                            <td class="lanthanide">
+                                <small>59</small>
+                                <big>Pr</big>
+                                <bdo>Praseodymium</bdo>
+                                <bdi>140.90765</bdi>
+                            </td>
+                            <td class="lanthanide" title="Neodymium">
+                                <small>60</small>
+                                <big>Nd</big>
+                                <bdo>Neodymium</bdo>
+                                <bdi>144.24</bdi>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="face4">
+                    <tbody>
+                        <tr>
+                            <td class="lanthanide">
+                                <small>61</small>
+                                <big>Pm</big>
+                                <bdo>Promethium</bdo>
+                                <bdi>144.9127</bdi>
+                            </td>
+                            <td class="lanthanide">
+                                <small>62</small>
+                                <big>Sm</big>
+                                <bdo>Samarium</bdo>
+                                <bdi>150.36</bdi>
+                            </td>
+                            <td class="lanthanide">
+                                <small>63</small>
+                                <big>Eu</big>
+                                <bdo>Europium</bdo>
+                                <bdi>151.9655</bdi>
+                            </td>
+                            <td class="lanthanide">
+                                <small>64</small>
+                                <big>Gd</big>
+                                <bdo>Gadolinium</bdo>
+                                <bdi>157.25</bdi>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="lanthanide">
+                                <small>65</small>
+                                <big>Tb</big>
+                                <bdo>Terbium</bdo>
+                                <bdi>158.92534</bdi>
+                            </td>
+                            <td class="lanthanide">
+                                <small>66</small>
+                                <big>Dy</big>
+                                <bdo>Dysprosium</bdo>
+                                <bdi>162.50</bdi>
+                            </td>
+                            <td class="lanthanide">
+                                <small>67</small>
+                                <big>Ho</big>
+                                <bdo>Holmium</bdo>
+                                <bdi>164.93032</bdi>
+                            </td>
+                            <td></td>
+                            <td class="lanthanide">
+                                <small>68</small>
+                                <big>Er</big>
+                                <bdo>Erbium</bdo>
+                                <bdi>167.26</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lanthanide">
+                                <small>69</small>
+                                <big>Tm</big>
+                                <bdo>Thulium</bdo>
+                                <bdi>168.93421</bdi>
+                            </td>
+                            <td class="lanthanide">
+                                <small>70</small>
+                                <big>Yb</big>
+                                <bdo>Ytterbium</bdo>
+                                <bdi>173.04</bdi>
+                            </td>
+                            <td></td>
+                            <td class="lanthanide">
+                                <small>71</small>
+                                <big>Lu</big>
+                                <bdo>Lutetium</bdo>
+                                <bdi>174.967</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>72</small>
+                                <big>Hf</big>
+                                <bdo>Hafnium</bdo>
+                                <bdi>178.49</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="transition_metal">
+                                <small>73</small>
+                                <big>Ta</big>
+                                <bdo>Tantalum</bdo>
+                                <bdi>180.9479</bdi>
+                            </td>
+                            <td></td>
+                            <td class="transition_metal">
+                                <small>74</small>
+                                <big>W</big>
+                                <bdo>Tungsten</bdo>
+                                <bdi>183.85</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>75</small>
+                                <big>Re</big>
+                                <bdo>Rhenium</bdo>
+                                <bdi>186.207</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>76</small>
+                                <big>Os</big>
+                                <bdo>Osmium</bdo>
+                                <bdi>190.23</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="transition_metal">
+                                <small>77</small>
+                                <big>Ir</big>
+                                <bdo>Iridium</bdo>
+                                <bdi>192.22</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>78</small>
+                                <big>Pt</big>
+                                <bdo>Platinum</bdo>
+                                <bdi>195.08</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>79</small>
+                                <big>Au</big>
+                                <bdo>Gold</bdo>
+                                <bdi>196.9665</bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>80</small>
+                                <big>Hg</big>
+                                <bdo>Mercury</bdo>
+                                <bdi>200.59</bdi>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="face5">
+                    <tbody>
+                        <tr>
+                            <td class="basic_metal">
+                                <small>81</small>
+                                <big>Tl</big>
+                                <bdo>Thallium</bdo>
+                                <bdi>204.3833</bdi>
+                            </td>
+                            <td class="basic_metal">
+                                <small>82</small>
+                                <big>Pb</big>
+                                <bdo>Lead</bdo>
+                                <bdi>207.2</bdi>
+                            </td>
+                            <td class="basic_metal">
+                                <small>83</small>
+                                <big>Bi</big>
+                                <bdo>Bismuth</bdo>
+                                <bdi>208.98037</bdi>
+                            </td>
+                            <td class="semi_metal">
+                                <small>84</small>
+                                <big>Po</big>
+                                <bdo>Polonium</bdo>
+                                <bdi><q>208.9824</q></bdi>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="halogen">
+                                <small>85</small>
+                                <big>At</big>
+                                <bdo>Astatine</bdo>
+                                <bdi>209.9871</bdi>
+                            </td>
+                            <td class="noble_gas">
+                                <small>86</small>
+                                <big>Rn</big>
+                                <bdo>Radon</bdo>
+                                <bdi>222.0176</bdi>
+                            </td>
+                            <td class="alkali_metal">
+                                <small>87</small>
+                                <big>Fr</big>
+                                <bdo>Francium</bdo>
+                                <bdi>223.0197</bdi>
+                            </td>
+                            <td></td>
+                            <td class="alkaline_metal">
+                                <small>88</small>
+                                <big>Ra</big>
+                                <bdo>Radium</bdo>
+                                <bdi>226.0254</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="actinide">
+                                <small>89</small>
+                                <big>Ac</big>
+                                <bdo>Actinium</bdo>
+                                <bdi>227.0278</bdi>
+                            </td>
+                            <td class="actinide">
+                                <small>90</small>
+                                <big>Th</big>
+                                <bdo>Thorium</bdo>
+                                <bdi>232.0381</bdi>
+                            </td>
+                            <td></td>
+                            <td class="actinide">
+                                <small>91</small>
+                                <big>Pa</big>
+                                <bdo>Protactinium</bdo>
+                                <bdi>231.03588</bdi>
+                            </td>
+                            <td class="actinide">
+                                <small>92</small>
+                                <big>U</big>
+                                <bdo>Uranium</bdo>
+                                <bdi>238.0289</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="actinide">
+                                <small>93</small>
+                                <big>Np</big>
+                                <bdo>Neptunium</bdo>
+                                <bdi>237.0482</bdi>
+                            </td>
+                            <td></td>
+                            <td class="actinide">
+                                <small>94</small>
+                                <big>Pl</big>
+                                <bdo>Plutonium</bdo>
+                                <bdi>244.0642</bdi>
+                            </td>
+                            <td class="actinide">
+                                <small>95</small>
+                                <big>Am</big>
+                                <bdo>Americium</bdo>
+                                <bdi>243.0614</bdi>
+                            </td>
+                            <td class="actinide">
+                                <small>96</small>
+                                <big>Cm</big>
+                                <bdo>Curium</bdo>
+                                <bdi>247.0703</bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="actinide">
+                                <small>97</small>
+                                <big>Bk</big>
+                                <bdo>Berkelium</bdo>
+                                <bdi>247.0703</bdi>
+                            </td>
+                            <td class="actinide">
+                                <small>98</small>
+                                <big>Cf</big>
+                                <bdo>Californium</bdo>
+                                <bdi>251.0796</bdi>
+                            </td>
+                            <td class="actinide">
+                                <small>99</small>
+                                <big>Es</big>
+                                <bdo>Einsteinium</bdo>
+                                <bdi><q>254</q></bdi>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="face6">
+                    <tbody>
+                        <tr>
+                            <td class="actinide">
+                                <small>100</small>
+                                <big>Fm</big>
+                                <bdo>Fermium</bdo>
+                                <bdi>257.0951</bdi>
+                            </td>
+                            <td class="actinide">
+                                <small>101</small>
+                                <big>Md</big>
+                                <bdo>Mendelevium</bdo>
+                                <bdi>258.1</bdi>
+                            </td>
+                            <td class="actinide">
+                                <small>102</small>
+                                <big>No</big>
+                                <bdo>Nobelium</bdo>
+                                <bdi>259.1009</bdi>
+                            </td>
+                            <td class="actinide">
+                                <small>103</small>
+                                <big>Lr</big>
+                                <bdo>Lawrencium</bdo>
+                                <bdi><q>262</q></bdi>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="transition_metal">
+                                <small>104</small>
+                                <big>Rf</big>
+                                <bdo>Rutherfordium</bdo>
+                                <bdi><q>261</q></bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>105</small>
+                                <big>Db</big>
+                                <bdo>Dubnium</bdo>
+                                <bdi><q>262</q></bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>106</small>
+                                <big>Sg</big>
+                                <bdo>Seaborgium</bdo>
+                                <bdi><q>266</q></bdi>
+                            </td>
+                            <td></td>
+                            <td class="transition_metal">
+                                <small>107</small>
+                                <big>Bh</big>
+                                <bdo>Bohrium</bdo>
+                                <bdi><q>264</q></bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="transition_metal">
+                                <small>108</small>
+                                <big>Hs</big>
+                                <bdo>Hassium</bdo>
+                                <bdi><q>269</q></bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>109</small>
+                                <big>Mt</big>
+                                <bdo>Meitnerium</bdo>
+                                <bdi><q>268</q></bdi>
+                            </td>
+                            <td></td>
+                            <td class="transition_metal">
+                                <small>110</small>
+                                <big>Ds</big>
+                                <bdo>Darmstadtium</bdo>
+                                <bdi><q>269</q></bdi>
+                            </td>
+                            <td class="transition_metal">
+                                <small>111</small>
+                                <big>Rg</big>
+                                <bdo>Roentgenium</bdo>
+                                <bdi><q>272</q></bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="transition_metal">
+                                <small>112</small>
+                                <big>Cn</big>
+                                <bdo>Copernicium</bdo>
+                                <bdi><q>277</q></bdi>
+                            </td>
+                            <td></td>
+                            <td class="basic_metal">
+                                <small>113</small>
+                                <big>Uut</big>
+                                <bdo>Ununtrium</bdo>
+                                <bdi><q>289</q></bdi>
+                            </td>
+                            <td class="basic_metal">
+                                <small>114</small>
+                                <big>Uuq</big>
+                                <bdo>Ununquadium</bdo>
+                                <bdi><q>289</q></bdi>
+                            </td>
+                            <td class="basic_metal">
+                                <small>115</small>
+                                <big>Uup</big>
+                                <bdo>Ununpentium</bdo>
+                                <bdi><q>290</q></bdi>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="basic_metal">
+                                <small>116</small>
+                                <big>Uuh</big>
+                                <bdo>Ununhexium</bdo>
+                                <bdi><q>298</q></bdi>
+                            </td>
+                            <td class="halogen">
+                                <small>117</small>
+                                <big>Uus</big>
+                                <bdo>Ununseptium</bdo>
+                                <bdi>unknown</bdi>
+                            </td>
+                            <td class="noble_gas">
+                                <small>118</small>
+                                <big>Uuo</big>
+                                <bdo>Ununoctium</bdo>
+                                <bdi>unknown</bdi>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

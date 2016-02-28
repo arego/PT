@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 15px;
+    
+    background-color: #4e86a2;
+}
+::-webkit-scrollbar-button {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #808080;
+}
+::-webkit-scrollbar-button:hover {
+    background-color: #008aff;
+}
+::-webkit-scrollbar-track {
+    background-color: #919ed1;
+}
+::-webkit-scrollbar-thumb {
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #008aff;
+} 
+a {
+    text-decoration: none;
+
+    cursor: url(../imgs/nice_cursor.png) 4 12, auto;
+}
+a:hover {
+    color: #dcd8e2;
+    text-decoration: underline;
+
+    background-color: transparent;
+}
+body {
+    min-width: 1400px;
+
+    background-color: #e9e5e5;
+    font-family: cursive, sans-serif;
+
+    margin: 0;
+}
+div span {
+    text-align: right;
+    line-height: 20px;
+
+    display: block;
+}
+figure {
+    position: absolute;
+
+    margin: 7px 0 0 12px;
+
+    transition: width 2s, height 2s, transform 2s;
+}
+figure:hover {
+	transform: rotate(360deg);
+	-webkit-filter: invert(.9);
+}
+footer {
+    height: 45px;
+    min-width: 320px;
+    max-width: 100%;
+    
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: -webkit-gradient(linear, left bottom, left top, from(#0e85ff), to(#e9e5e5));
+}
+footer table {
+    height: 45px;
+    width: 100%;
+}
+header {
+    height: 57px;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#0e85ff), to(#e9e5e5));
+}
+menu {
+    color: #fff;
+    float: right;
+
+    line-height: 53px;
+}
+menu a {
+    color: #e9e5e5;
+    font: bold 11px/16px lucida grande, verdana, sans-serif;
+    text-align: center;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#4986a4), to(#838383));
+    
+    padding: 5px 8px;
+    border-radius: 5px;
+    border-top: 1px solid #8e9599;
+    margin: 8px 13px 0 0;
+
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 3px;
+    -webkit-text-stroke: 1px transparent;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+}
+menuitem {
+    height: 50px;
+}
+object {
+    height: 1200px;
+    width: 100%;
+}
+.author {
+    margin-left: 50px;
+}
+.author_button {
+    margin: 0 15px 0 20px;
+}
+.contact {
+    color: #cfc4c4;
+    font-size: 12px;
+
+    padding-right: 94px;
+}
+.create_by {
+    color: #53054a;
+    cursor: url(../imgs/cursor_what.png) 4 12, auto;
+    font-size: 12px;
+
+    padding-right: 5px;
+}
+.logo {
+    height: 35px;
+    width: 35px;
+}
+#menu_bar {
+	margin-top: 15px;
+}
+#menu_bar ul {
+	position: relative;
+
+	float: right;
+
+    color: #e9e5e5;
+    font: bold 11px/16px lucida grande, verdana, sans-serif;
+	list-style: none;
+    text-align: center;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 3px;
+    -webkit-text-stroke: 1px transparent;
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#0eafff), to(#fff));
+    
+    padding: 5px 8px;
+    border-radius: 5px;
+    border-top: 1px solid #8e9599;
+    margin: 0 50px 0 0;
+}
+#menu_bar ul a {
+	color: #333;
+	font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 20px;
+	text-decoration: none;
+
+	display: block;
+
+	padding: 0 8px;
+}
+#menu_bar ul li {
+	position: relative;
+
+	float: left;
+
+	padding: 0;
+	margin: 0;
+}
+#menu_bar ul li:hover {
+	background: #f6f6f6;
+}
+#menu_bar ul ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+
+	background: #fff;
+	display: none;
+
+	padding: 0;
+}
+#menu_bar ul ul li {
+	width: 100px;
+
+	float: none;
+
+    border-radius: 5px;
+}
+#menu_bar ul ul a {
+	line-height: 120%;
+
+	padding: 10px 15px;
+}
+#menu_bar ul ul ul {
+	top: 0;
+	left: 100%;
+}
+#menu_bar ul li:hover > ul {
+	display: block;
+}
+@media (min-width: 4000px) {
+    div, em, sup, strong, tt, rt, .table th {
+        font-size: 5px;
+    }
+}

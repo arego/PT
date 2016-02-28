@@ -1,0 +1,749 @@
+a {
+    color: #000;
+    text-decoration: none;
+}
+a::after {
+	position: absolute;
+	top: 178px;
+	left: 595px;
+
+    content: 'Symbol';
+
+    display: none;
+}
+a::before {
+	position: absolute;
+	top: 200px;
+	left: 288px;
+
+    content: 'Atomic Name';
+
+    display: none;
+}
+bdo {
+    font-size: 10px;
+    vertical-align: bottom;
+
+    line-height: 1px;
+
+    display: block;
+
+    margin: 1px 0 6px 0;
+}
+bdo::after {
+	width: 100px;
+
+	position: absolute;
+    z-index: 2;
+	top: 214px;
+	left: 444px;
+    
+	color: #000;
+    content: attr(content-text);
+    font-size: 16px;
+	text-align: center;
+
+	display: none;
+}
+bdo::before{
+	position: absolute;
+    z-index: 3;
+
+	top: 208px;
+	left: 397px;
+
+    content: '__________';
+
+    display: none;
+}
+bdi {
+    font-size: 10px;
+    vertical-align: bottom;
+
+    line-height: 12px;
+
+    display: block;
+
+    margin: 4px 0 3px 0;
+}
+bdi::after {
+	width: 100px;
+
+	position: absolute;
+    z-index: 2;
+	top: 234px;
+	left: 444px;
+
+	color: #000;
+	content: attr(content-text);
+    font-size: 14px;
+	text-align: center;
+
+	display: none;
+}
+bdi::before {
+	position: absolute;
+    z-index: 3;
+
+	top: 228px;
+	left: 525px;
+    
+    content: '__________';
+
+    display: none;
+}
+big {
+    vertical-align: text-top;
+
+    display: block;
+}
+big::after {
+    width: 100px;
+
+    position: absolute;
+    z-index: 2;
+    top: 170px;
+	left: 444px;
+
+    color: #000;
+	content: attr(content-text);
+    font-size: 33px;
+	text-align: center;
+	
+	display: none;
+}
+big::before {
+	position: absolute;
+    z-index: 3;
+
+	top: 170px;
+	left: 520px;
+
+    content: '_______';
+
+    display: none;
+}
+body {
+    font-family: cusans-serif;
+
+    background-color: #e9e5e5;
+    
+    margin: 0;
+}
+main {
+    top: 0;
+    right: 0;
+    left: 0;
+    
+    margin: 150px 0 155px 0;
+
+    z-index: -1;
+}
+marquee {
+    height: 100%;
+    width: 60px;
+
+    z-index: 1;
+
+    padding: 0;
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+    margin: 0;
+}
+p {
+    font-size: 10px;
+    vertical-align: bottom;
+
+    line-height: 1px;
+}
+small {
+    font-size: 8px;
+
+    display: flex;
+
+    margin-left: 5px;
+}
+small::after {
+    width: 92px;
+
+    position: absolute;
+    z-index: 2;
+    top: 154px;
+	left: 455px;
+
+    color: #000;
+	content: attr(content-text);
+	font-size: 12px;
+	text-align: left;
+	
+	display: none;
+}
+small::before {
+	position: absolute;
+    z-index: 3;
+
+    top: 154px;
+	left: 418px;
+
+    content: '________';
+	
+    display: none;
+}
+span::after {
+    position: absolute;
+    top: 150px;
+    left: 290px;
+
+    content: 'Atomic Number';
+    font-size: 20px;
+    
+    display: none;
+}
+span::before {
+    position: absolute;
+
+    top: 230px;
+    left: 580px;
+    
+    content: 'Atomic Mass';
+    font-size: 20px;
+
+    display: none;
+}
+span a {
+    color: #1717a3;
+    font-size: 20px;
+}
+-webkit-moz-div {
+    max-height: 19px;
+}
+.actinid {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to top,  #f7eee9, #00aaa0);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+}
+.actinide {
+    text-align: center;
+
+    background: linear-gradient(to top, #f5f0f0, #00aaa0);
+    display: table-cell;
+  
+    border: #0f5782 0 solid;
+}
+.alkali {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #fefcea, #8ed2c9);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+}
+.alkali:hover::after, .alkali:hover small::after, .alkali:hover small::before, .alkali:hover big::after, .alkali:hover big::before, .alkali:hover bdo::after, .alkali:hover bdo::before, .alkali:hover bdi::after, .alkali:hover bdi::before, .alkali:hover a::after, .alkali:hover a::before, .alkali:hover span::after, .alkali:hover span::before,    
+.alkaline:hover::after, .alkaline:hover small::after, .alkaline:hover small::before, .alkaline:hover big::after, .alkaline:hover big::before, .alkaline:hover bdo::after, .alkaline:hover bdo::before, .alkaline:hover bdi::after, .alkaline:hover bdi::before, .alkaline:hover a::after, .alkaline:hover a::before, .alkaline:hover span::after, .alkaline:hover span::before,  
+.transition:hover::after, .transition:hover small::after,.transition:hover small::before,.transition:hover big::after,.transition:hover big::before, .transition:hover bdo::after, .transition:hover bdo::before, .transition:hover bdi::after, .transition:hover bdi::before, .transition:hover a::after, .transition:hover a::before, .transition:hover span::after, .transition:hover span::before,
+.poor:hover::after, .poor:hover small::after, .poor:hover small::before, .poor:hover big::after, .poor:hover big::before, .poor:hover bdo::after, .poor:hover bdo::before, .poor:hover bdi::after, .poor:hover bdi::before, .poor:hover a::after, .poor:hover a::before, .poor:hover span::after, .poor:hover span::before,      
+.metalloid:hover::after, .metalloid:hover small::after, .metalloid:hover small::before, .metalloid:hover big::after, .metalloid:hover big::before, .metalloid:hover bdo::after, .metalloid:hover bdo::before, .metalloid:hover bdi::after, .metalloid:hover bdi::before, .metalloid:hover a::after, .metalloid:hover a::before, .metalloid:hover span::after, .metalloid:hover span::before, 
+.non_metal:hover::after, .non_metal:hover small::after, .non_metal:hover small::before, .non_metal:hover big::after, .non_metal:hover big::before, .non_metal:hover bdo::after, .non_metal:hover bdo::before, .non_metal:hover bdi::after, .non_metal:hover bdi::before, .non_metal:hover a::after, .non_metal:hover a::before, .non_metal:hover span::after, .non_metal:hover span::before,  
+.halogen:hover::after, .halogen:hover small::after, .halogen:hover small::before, .halogen:hover big::after, .halogen:hover big::before, .halogen:hover bdo::after, .halogen:hover bdo::before, .halogen:hover bdi::after, .halogen:hover bdi::before, .halogen:hover a::after, .halogen:hover a::before, .halogen:hover span::after, .halogen:hover span::before,   
+.noble_gase:hover::after, .noble_gase:hover small::after, .noble_gase:hover small::before, .noble_gase:hover big::after, .noble_gase:hover big::before, .noble_gase:hover bdo::after, .noble_gase:hover bdo::before, .noble_gase:hover bdi::after, .noble_gase:hover bdi::before, .noble_gase:hover a::after, .noble_gase:hover a::before, .noble_gase:hover span::after, .noble_gase:hover span::before {
+	display: block;
+}
+.alkali_group {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #fefcea, #8ed2c9);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.alkali::after {
+    height: 100px;
+    width: 100px;
+	
+    position: absolute;
+	top: 150px;
+	left: 444px;
+
+	content: '';
+	
+    background: linear-gradient(to right, #fefcea, #8ed2c9);
+    display: none;
+
+	border: 1px solid black;
+    border-radius: 8px;
+}
+.alkali, .alkaline, .transition, .poor, .metalloid, .non_metal, .halogen, .noble_gase, .lanthanid, .actinid {
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    border-radius: 8px;
+}
+.alkaline {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #fefcea, #f69a98);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+}
+.alkaline_group {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #fefcea, #f69a98);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.alkaline::after {
+    height: 100px;
+    width: 100px;
+	
+    position: absolute;
+    top: 150px;
+	left: 444px;
+
+	content: '';
+	
+	background: linear-gradient(to right, #fefcea, #f69a98);
+	display: none;
+
+	border: 1px solid #000;
+    border-radius: 8px;
+}
+.collapse {
+    border-collapse: collapse;
+
+    display: table;
+}
+.collapse .d_tbody .d_tr div {
+    min-width: 60px;
+}
+.d_caption {
+    color: #05054a;
+    font-size: 28px;
+    text-align: center;
+
+    display: table-caption;
+
+    padding-bottom: 40px;
+}
+.d_table {
+    width: 1140px;
+
+    position: relative;
+
+    display: table;
+
+    border-spacing: 2px;
+    margin: auto;
+}
+.d_table_foot {
+    width: 1060px;
+
+    display: table;
+
+    margin-left: 100px;
+}
+.d_tbody {
+    display: table-row-group;
+}
+.d_tbody p:nth-of-type(2n+1) {
+    font-size: 9px;
+}
+.d_tbody .d_td {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    padding: 0;
+}
+.d_td, .d_tr {
+    width: 60px;
+
+    white-space: nowrap;
+}
+.d_tfoot {
+    display: table-footer-group;
+}
+.d_tfoot .d_table {
+    height: 57px;
+
+    margin: 32px 0 0 270px;
+}
+.d_tfoot .d_th {
+    width: 73px;
+
+    color: #150a5a;
+    font-family: rosario, sans-serif;
+    font-size: 12px;
+    text-align: center;
+
+    padding-left: 8px;
+    padding-right: 18px;
+}
+.d_tfoot .d_tr .d_td {
+    margin-top: 100px;
+}
+.d_tfoot .d_tbody .d_tr div {
+    font-size: 12px;
+    line-height: 52px;
+    text-overflow: ellipsis;
+
+    overflow: hidden;
+
+    padding: 5px;
+}
+.d_th {
+    display: table-cell;
+}
+.d_thead .d_th, .d_tbody .d_th {
+    min-width: 61px;
+    max-width: 63px;
+
+    color: #bababf;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    	
+    padding: 0;
+}
+.d_thead {
+    display: table-header-group;
+}
+.d_tr {
+    display: table-row;
+}
+.d_tr .d_th {
+    width: 63px;
+}
+.empty{
+    width: 100%;
+
+    display: table-cell;
+}
+.fon_act {
+    background: linear-gradient(to top, #fff, #00aaa0);
+    display: flex;
+
+    border-radius: 8px;
+}
+.fon_lan {
+    background: linear-gradient(to top, #ffece2, #352064);
+    display: flex;
+
+    border-radius: 8px;
+}
+.group {
+    font-size: 12px;
+
+    padding-left: 21px;
+}
+.halogen {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #f7f8f9,  #7777a4);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+}
+.halogen_group {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #f7f8f9,  #7777a4);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.halogen::after {
+    height: 100px;
+    width: 100px;
+	
+	position: absolute;
+	top: 150px;
+	left: 444px;
+
+    content: '';
+	
+    background: linear-gradient(to right, #f7f8f9,  #7777a4);
+	display: none;
+
+	border: 1px solid #000;
+    border-radius: 8px;
+}
+.lanthanid {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to top, #ffece2, #352064);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+}
+.lanthanide {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to top, #f1e1dc, #462066);
+    display: table-cell;
+  
+    border: #0f5782 0 solid;
+}
+.line {
+    width: 45px;
+
+    color: #123455;
+
+    transform: rotate(15deg);
+}
+.metalloid {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #fefcea, #c25b56);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+}
+.metalloid_group {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #fefcea, #c25b56);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.metalloid::after {
+    height: 100px;
+    width: 100px;
+	
+	position: absolute;
+	top: 150px;
+	left: 444px;
+
+    content: '';
+	
+    background: linear-gradient(to right, #fefcea, #c25b56);
+	display: none;
+
+	border: 1px solid #000;
+    border-radius: 8px;
+}
+.noble_gase {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #fefcea, #9fbf8c);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+}
+.noble_gase_group {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #fefcea, #9fbf8c);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.noble_gase::after {
+    height: 100px;
+    width: 100px;
+	
+	position: absolute;
+	top: 150px;
+	left: 444px;
+	
+    content: '';
+	
+    background: linear-gradient(to right, #fefcea, #9fbf8c);
+    display: none;
+
+	border: 1px solid #000;
+    border-radius: 8px;
+}
+.non_metal {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #fefcea, #ffb85f);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+}
+.non_metal_group {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #fefcea, #ffb85f);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.non_metal::after {
+    height: 100px;
+    width: 100px;
+	
+	position: absolute;
+	top: 150px;
+	left: 444px;
+	
+    content: '';
+
+    background: linear-gradient(to right, #fefcea, #ffb85f);
+    display: none;
+
+	border: 1px solid #000;
+    border-radius: 8px;
+}
+.period {
+    font-size: 12px;
+
+    padding-right: 12px;
+}
+.poor {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #fefcea, #cdeb8b);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+}
+.poor_group {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #fefcea, #cdeb8b);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.poor::after {
+    height: 100px;
+    width: 100px;
+	
+	position: absolute;
+	top: 150px;
+	left: 444px;
+	
+    content: '';
+
+    background: linear-gradient(to right, #fefcea, #cdeb8b);
+    display: none;
+
+	border: 1px solid #000;
+    border-radius: 8px;
+}
+.transition {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #faf0f6, #1fa0cb);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+}
+.transition_group {
+    min-width: 60px;
+    max-width: 60px;
+
+    text-align: center;
+
+    background: linear-gradient(to right, #faf0f6, #1fa0cb);
+    display: table-cell;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.transition::after {
+    height: 100px;
+    width: 100px;
+	
+	position: absolute;
+	top: 150px;
+	left: 444px;
+	
+    content: '';
+	
+    background: linear-gradient(to right, #faf0f6, #1fa0cb);
+    display: none;
+
+	border: 1px solid black;
+    border-radius: 8px;
+}
+@media screen and (min-width: 2500px) {
+    small, bdo, bdi {
+        font-size: 4px;
+    }
+}
+@media (min-width: 4000px) {
+    div, em, sup, strong, tt, rt, .table th {
+        font-size: 5px;
+    }
+}
+@media (min-width: 4000px) {
+    big::after, small::after, bdi::after {
+        font-size: 10px;
+    }
+}
+@media (min-width: 4000px) {
+    bdo::after {
+        font-size: 5px;
+    }
+}

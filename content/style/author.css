@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    position: absolute;
+
+    font-family: cursive;
+    font-size: 55px;
+    text-shadow: 10px 19px 13px #bc8f8f;
+
+    padding: 50px 0 0 300px;
+}
+img {
+    margin: 70px 0 0 15px;
+}
+p {
+    text-align: justify;
+
+    margin: 0 100px 25px 300px;
+}
+p::first-letter {
+    color: #57859b;
+    font-size: 200%;
+    
+    margin: 0 0 0 40px;
+}
+section {
+    background-image: url(../imgs/background_author.jpg);
+
+    padding-bottom: 30px;
+    margin: 75px 100px 0 100px;
+}

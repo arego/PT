@@ -1,0 +1,227 @@
+a {
+    color: #000;
+    text-decoration: none;
+}
+body {
+    font-family: sans-serif;
+
+    background-color: #e9e5e5;
+}
+caption {
+    color: #05054a;
+    font-size: 28px;
+
+    padding-bottom: 40px;
+}
+main {
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+	
+    margin: 150px 0 155px 0;
+}
+main table {
+    margin: auto;
+}
+p {
+    width: 60px;
+
+    line-height: 8px;
+
+    font-size: 10px;
+    font-family: initial;
+    vertical-align: bottom;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    padding: 2px;
+    margin: 0;
+}
+rt {
+    font-size: 10px;
+    vertical-align: text-top;
+}
+ruby {
+    vertical-align: text-top;
+}
+span {
+    color: #c7bbb5;
+}
+table tfoot tr td table tr td {
+    width: 73px;
+
+    color: #150a5a;
+    font-family: initial;
+    font-size: 12px; 
+    text-align: center;
+}
+tbody p:nth-of-type(2n+1) {
+    font-size: 9px;
+}
+td {
+    min-width: 60px;
+    max-width: 63px;
+
+    text-align: center;
+	
+    padding: 0;
+}
+td, th {
+    height: 60px;
+    width: 63px;
+
+    white-space: nowrap;
+}
+tfoot tr td table {
+    height: 57px;
+    width: 1000px;
+
+    margin: 32px 0 0 202px;
+}
+tfoot tr:nth-of-type(1) {
+    height: 57px;
+}
+thead th, tbody th {
+    min-width: 60px;
+    max-width: 60px;
+
+    color: #bababf;
+    font-size: 12px;
+    text-align: center;
+	
+    padding: 0;
+}
+.actinide {
+    cursor: url(../imgs/cursor6.png) 4 12, auto;
+    text-align: center;
+    text-overflow: ellipsis;
+
+    background: linear-gradient(to top, #fff, #00aaa0);
+    overflow: hidden;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.alkali {
+    cursor: url(../imgs/cursor3.png) 4 12, auto;
+    text-align: center;
+    text-overflow: ellipsis;
+
+    background: linear-gradient(to right, #fefcea, #8ed2c9);
+    overflow: hidden;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.alkaline {
+    cursor: url(../imgs/cursor4.png) 4 12, auto;
+    text-align: center;
+    text-overflow: ellipsis;
+
+    background: linear-gradient(to right, #fefcea, #f69a98);
+    overflow: hidden;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.group {
+    font-size: 12px;
+
+    padding-left: 21px;
+}
+.halogen {
+    cursor: url(../imgs/cursor7.png) 4 12, auto;
+    text-align: center;
+    text-overflow: ellipsis;
+
+    background: linear-gradient(to right, #f7f8f9,  #7777a4);
+    overflow: hidden;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.lanthanide {
+    cursor: url(../imgs/cursor3.png) 4 12, auto;
+    text-align: center;
+    text-overflow: ellipsis;
+
+    background: linear-gradient(to top, #f7eee9, #462066);
+    overflow: hidden;
+    
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.line {
+    width: 45px;
+
+    color: #123455;
+
+    transform: rotate(15deg);
+}
+.metalloid {
+    cursor: url(../imgs/cursor6.png) 4 12, auto;
+    text-align: center;
+    text-overflow: ellipsis;
+
+    background: linear-gradient(to right, #fefcea, #c25b56);
+    overflow: hidden;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.noble_gase {
+    cursor: url(../imgs/cursor1.png) 4 12, auto;
+    text-align: center;
+    text-overflow: ellipsis;
+
+    background: linear-gradient(to right, #fefcea, #9fbf8c);
+    overflow: hidden;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.non_metal {
+    cursor: url(../imgs/cursor2.png) 4 12, auto;
+    text-align: center;
+    text-overflow: ellipsis;
+
+    background: linear-gradient(to right, #fefcea, #ffb85f);
+    overflow: hidden;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.period {
+    font-size: 12px;
+
+    padding-right: 12px;
+}
+.poor {
+    cursor: url(../imgs/cursor7.png) 4 12, auto;
+    text-align: center;
+    text-overflow: ellipsis;
+
+    background: linear-gradient(to right, #fefcea, #cdeb8b);
+    overflow: hidden;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+.transition {
+    cursor: url(../imgs/cursor1.png) 4 12, auto;
+    text-align: center;
+    text-overflow: ellipsis;
+
+    background: linear-gradient(to right, #faF0F6, #1fa0cb);
+    overflow: hidden;
+
+    border: #0f5782 1px solid;
+    border-radius: 8px;
+}
+@media (min-width: 4000px) {
+    a, div, em, p, sup, rt, strong, td, th {
+        font-size: 5px;
+    }
+}
